@@ -1,0 +1,94 @@
+.menu{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 50px;
+    left: 0;
+    transform: translateX(-130%);
+    transition: all 0.2s;
+}
+.menu.active{
+    transform: translateX(0);
+}
+
+.blur {
+    width: 100vw;
+    height: 100vh;
+    left: 22%;
+    backdrop-filter: blur(2px);
+    position: absolute;
+}
+
+.menu__content {
+    width: 22%;
+    height: 100%;
+    background-color: rgb(24, 24, 24, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.4s;
+}
+
+.menu__header{
+    padding: 10px;
+    font-size: 2rem;
+    color: white;
+    border-bottom: 1px solid white;
+    width: 100%;
+    text-align: center;
+}
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    
+}
+ul li{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+ul{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+@media screen and (max-width: 1250px){
+    .menu__content{
+        width: 100%;
+    }
+    .blur{
+        backdrop-filter: none;
+    }
+}
+a {
+    border: 2px solid #ffffff; /* Толщина, стиль и цвет рамки */
+    padding: 5px 10px; /* Отступы внутри рамки */
+    margin: 15px;
+}
+  a:hover{
+    box-shadow: 0 0 10px 2px rgb(255, 255, 255);
+}
+
+.pIlevel{
+    border: 2px solid #ffffff; /* Толщина, стиль и цвет рамки */
+    padding: 5px 10px; /* Отступы внутри рамки */
+    margin: 10px;
+    color:#ffffff;
+
+}
+  .pIlevel:hover{
+    box-shadow: 0 0 10px 2px rgb(255, 255, 255);
+}
+.pIlevel:active{
+    background-color: rgb(255, 255, 255);
+    color:#ffffff;
+}
+.GeneralPersonalization{
+    border: 2px solid #ffffff; /* Толщина, стиль и цвет рамки */
+    margin: 20px;
+    padding: 5px;
+}
+

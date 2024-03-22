@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+  height: 50px;
+  width: 100%;
+  background-color: rgb(44, 44, 44);
+  position: fixed;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+}
+.mainContainer{
+  padding: 50px;
+}
+
+.burger-btn{
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.burger-btn:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 20px;
+  background-color: rgb(255, 255, 255);
+  height: 3px;
+}
+.burger-btn span {
+  position: absolute;
+  top: 9px;
+  width: 20px;
+  background-color: rgb(255, 255, 255);
+  height: 2px;
+}
+.burger-btn:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 20px;
+  background-color: rgb(255, 255, 255);
+  height: 2px;
+}
+
+
+  .divContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+  .material-symbols-outlined{
+    color: white;
+    margin-left: 10px;
+  }
+
+  .contenLabel{
+    margin: auto;
+  }
+
+  .contentQrButton{
+    padding: 5px;
+    border: 2px solid #000;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    margin: auto;
+    display: block;
+    background-color: #fff;
+  }
+  .contentQrButton:hover {
+    background-color: #000;
+    color: #fff;
+    cursor:pointer;
+    transition: all 0.4s;
+    
+  }
+  .contentQr{
+    text-align: center;
+    padding: 0px;
+    font-size: 1.5em;
+  }
+
+  .QrArea{
+    margin: auto;
+    display: block;
+    padding: 25px;
+  }
+
+.BackgroundContainer:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.AboutContainer{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid white;
+  padding: 30px;
+}
+.AboutNote{
+  color :#fff;
+  font-size: 30px;
+}
+
+.GeneralBottom{
+  background-color: rgb(39, 39, 39);
+  margin: 20px;
+  padding: 20px;
+}
